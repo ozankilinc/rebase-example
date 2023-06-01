@@ -51,4 +51,8 @@ public class RebaseExampleController {
     public ResponseEntity<String> hello() {
         return ResponseEntity.ok(rebaseService.hello());
     }
+
+    private String method2() {
+        return "Method2";
+    }
 }
