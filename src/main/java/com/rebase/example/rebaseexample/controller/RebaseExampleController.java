@@ -30,8 +30,14 @@ public class RebaseExampleController {
         return ResponseEntity.ok(rebaseService.postRebase(request));
     }
 
-    @PutMapping("put-rebase")
+    @PutMapping("/put-rebase")
     public ResponseEntity<UpdateRebaseResponse> updateRebase(@RequestBody UpdateRebaseRequest request) {
         return ResponseEntity.ok(rebaseService.updateRebase(request));
+    }
+
+    @DeleteMapping("/delete-rebase/{id}")
+    public ResponseEntity<Void> deleteRebase(@PathVariable("id") String id) {
+        rebaseService.deleteRebase(id);
+        return ResponseEntity.ok().build();
     }
 }

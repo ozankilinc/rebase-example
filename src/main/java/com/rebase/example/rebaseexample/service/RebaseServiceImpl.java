@@ -48,4 +48,9 @@ public class RebaseServiceImpl implements RebaseService {
                 .documentId("documentId")
                 .build();
     }
+
+    @Override
+    public void deleteRebase(String id) {
+        log.info("DeleteId " + id);
+    }
 }
