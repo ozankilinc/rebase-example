@@ -6,4 +6,6 @@ import com.rebase.example.rebaseexample.model.response.GetRebaseResponse;
 public interface RebaseService {
 
     GetRebaseResponse getRebase(GetRebaseRequest request);
+
+    void deleteRebaseById(String id);
 }

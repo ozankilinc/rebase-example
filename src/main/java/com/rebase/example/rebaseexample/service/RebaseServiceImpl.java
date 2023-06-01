@@ -14,9 +14,13 @@ public class RebaseServiceImpl implements RebaseService {
     public GetRebaseResponse getRebase(GetRebaseRequest request) {
         log.info("GetRebaseRequest: {}", request);
         return GetRebaseResponse.builder()
-                .id("1")
-                .name("first")
+                .id("2")
                 .title("title")
                 .build();
+    }
+
+    @Override
+    public void deleteRebaseById(String id) {
+        log.info("Rebase id: " + id);
     }
 }

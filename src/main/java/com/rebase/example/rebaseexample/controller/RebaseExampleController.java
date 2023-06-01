@@ -5,10 +5,7 @@ import com.rebase.example.rebaseexample.model.response.GetRebaseResponse;
 import com.rebase.example.rebaseexample.service.RebaseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
@@ -19,6 +16,13 @@ public class RebaseExampleController {
 
     @PostMapping("/get-rebase")
     public ResponseEntity<GetRebaseResponse> getRebase(@RequestBody GetRebaseRequest request) {
+
         return ResponseEntity.ok(rebaseService.getRebase(request));
+    }
+
+    @DeleteMapping("/delete-rebase/{id}")
+    public ResponseEntity<Void> deleteRebase(@PathVariable("id") String id) {
+        rebaseService.deleteRebaseById(id);
+        return ResponseEntity.ok().build();
     }
 }
