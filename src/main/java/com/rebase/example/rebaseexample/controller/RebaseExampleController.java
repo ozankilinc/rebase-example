@@ -1,7 +1,9 @@
 package com.rebase.example.rebaseexample.controller;
 
 import com.rebase.example.rebaseexample.model.request.GetRebaseRequest;
+import com.rebase.example.rebaseexample.model.request.PostRebaseRequest;
 import com.rebase.example.rebaseexample.model.response.GetRebaseResponse;
+import com.rebase.example.rebaseexample.model.response.PostRebaseResponse;
 import com.rebase.example.rebaseexample.service.RebaseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,11 @@ public class RebaseExampleController {
     public ResponseEntity<GetRebaseResponse> getRebase(@RequestBody GetRebaseRequest request) {
 
         return ResponseEntity.ok(rebaseService.getRebase(request));
+    }
+
+    @PostMapping("/post-rebase")
+    public ResponseEntity<PostRebaseResponse> postRebase(@RequestBody PostRebaseRequest request) {
+        return ResponseEntity.ok(rebaseService.postRebase(request));
     }
 
     @DeleteMapping("/delete-rebase/{id}")
