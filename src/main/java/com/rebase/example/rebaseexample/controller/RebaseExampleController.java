@@ -40,4 +40,10 @@ public class RebaseExampleController {
         rebaseService.deleteRebase(id);
         return ResponseEntity.ok().build();
     }
+
+    @PatchMapping("/patch-rebase/{id}")
+    public ResponseEntity<Void> patchRebase(@PathVariable("id") String id) {
+        rebaseService.patchRebase(id);
+        return ResponseEntity.ok().build();
+    }
 }
