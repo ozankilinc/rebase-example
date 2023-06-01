@@ -50,6 +50,11 @@ public class RebaseServiceImpl implements RebaseService {
     }
 
     @Override
+    public String hello() {
+        return "Hello Rebase";
+    }
+
+    @Override
     public void deleteRebase(String id) {
         log.info("DeleteId " + id);
     }

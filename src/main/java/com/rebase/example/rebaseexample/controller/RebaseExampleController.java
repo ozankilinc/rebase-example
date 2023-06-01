@@ -38,4 +38,9 @@ public class RebaseExampleController {
         rebaseService.deleteRebase(id);
         return ResponseEntity.ok().build();
     }
+
+    @GetMapping("/hello-world")
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok(rebaseService.hello());
+    }
 }
