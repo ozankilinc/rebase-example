@@ -16,4 +16,6 @@ public interface RebaseService {
     PostRebaseResponse postRebase(PostRebaseRequest request);
 
     UpdateRebaseResponse updateRebase(UpdateRebaseRequest request);
+
+    void deleteRebaseById(String id);
 }
