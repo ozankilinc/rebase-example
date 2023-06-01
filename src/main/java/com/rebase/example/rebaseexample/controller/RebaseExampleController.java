@@ -47,9 +47,8 @@ public class RebaseExampleController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/hello-world")
-    public ResponseEntity<String> hello() {
-        return ResponseEntity.ok(rebaseService.hello());
+    private String method2() {
+        return "Method2";
     }
 
     private String method1() {
