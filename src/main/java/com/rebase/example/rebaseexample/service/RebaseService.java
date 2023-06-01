@@ -18,4 +18,6 @@ public interface RebaseService {
     void deleteRebase(String id);
 
     void patchRebase(String id);
+
+    String hello();
 }
