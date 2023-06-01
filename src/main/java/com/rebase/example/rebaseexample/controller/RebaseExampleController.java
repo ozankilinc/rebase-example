@@ -26,12 +26,6 @@ public class RebaseExampleController {
         return ResponseEntity.ok(rebaseService.getRebase(request));
     }
 
-    @DeleteMapping("/delete-rebase/{id}")
-    public ResponseEntity<Void> deleteRebase(@PathVariable("id") String id) {
-        rebaseService.deleteRebaseById(id);
-        return ResponseEntity.ok().build();
-    }
-
     @PostMapping("/post-rebase")
     public ResponseEntity<PostRebaseResponse> postRebase(@RequestBody PostRebaseRequest request) {
         return ResponseEntity.ok(rebaseService.postRebase(request));
