@@ -47,6 +47,14 @@ public class RebaseServiceImpl implements RebaseService {
                 .title("title")
                 .documentId("documentId")
                 .build();
+
+
+
+    }
+
+    @Override
+    public void patchRebase(String id) {
+        log.info("RebaseId " + id);
     }
 
     @Override
