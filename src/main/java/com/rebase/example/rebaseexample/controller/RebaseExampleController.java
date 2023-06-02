@@ -52,6 +52,10 @@ public class RebaseExampleController {
     }
 
     private String method1() {
-        return "Method 1";
+        return "Method 10";
+    }
+
+    private String method3() {
+        return "Method3";
     }
 }
