@@ -46,16 +46,4 @@ public class RebaseExampleController {
         rebaseService.patchRebase(id);
         return ResponseEntity.ok().build();
     }
-
-    private String method2() {
-        return "Method2";
-    }
-
-    private String method1() {
-        return "Method 10";
-    }
-
-    private String method3() {
-        return "Method3";
-    }
 }
