@@ -55,4 +55,8 @@ public class RebaseExampleController {
     private String testMethod4() {
         return "Test Method4";
     }
+
+    private String bls() {
+        return "Test another";
+    }
 }
