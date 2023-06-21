@@ -48,12 +48,13 @@ public class RebaseExampleController {
     private String testMethod2() {
         return "Test2 Method";
     }
-    private String test1Method(){
-        return "Test! Method";
-    }
 
     private String testMethod4() {
         return "Test Method4";
+    }
+
+    private String bla() {
+        return "Test";
     }
 
     private String testMethod5() {
