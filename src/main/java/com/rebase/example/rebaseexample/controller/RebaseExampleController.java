@@ -45,4 +45,7 @@ public class RebaseExampleController {
         return ResponseEntity.ok().build();
     }
 
+    private String test2() {
+        return  "Test2";
+    }
 }
