@@ -45,4 +45,8 @@ public class RebaseExampleController {
         return ResponseEntity.ok().build();
     }
 
+    public String trdt() {
+        return "Str";
+    }
+
 }
