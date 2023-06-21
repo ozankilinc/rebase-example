@@ -45,23 +45,4 @@ public class RebaseExampleController {
         return ResponseEntity.ok().build();
     }
 
-    private String testMethod2() {
-        return "Test2 Method";
-    }
-
-    private String testMethod4() {
-        return "Test Method4";
-    }
-
-    private String bla() {
-        return "Test";
-    }
-
-    private String testMethod5() {
-        return "Test Method5";
-    }
-
-    private String bls() {
-        return "Test another";
-    }
 }
